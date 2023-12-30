@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumantu T&T | Tour and Travels Agency</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+	{% load static %}
+	<link rel="stylesheet" type="text/css"
+	href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="../static/images/contact-img.svg" alt="">
+        </div>
+
+        <form action="" method="POST">
+		    {% csrf_token %}
+            <div class="inputBox">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="email" name="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number" name="number">
+                <input type="text" placeholder="subject" name="subject">
+            </div>
+            <textarea placeholder="message"  id="" cols="30" rows="10" name="message"></textarea>
+            <input type="submit" class="btn" value="send message" >
+        </form>
+
+    </div>
+    
+
+
+</body>
+</html>

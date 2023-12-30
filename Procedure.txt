@@ -1,0 +1,9 @@
+Start a server: python manage.py runserver
+
+To launch a webpage use the server address along with : http://127.0.0.1:8000/geeks/index
+
+To launch admin : http://127.0.0.1:8000/admin
+
+Admin passsword:
+Username: dell
+Password: admin

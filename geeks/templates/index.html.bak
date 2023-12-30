@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumantu T&T | Tour and Travels Agency</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/css/style.css">
+	{% load static %}
+	<link rel="stylesheet" type="text/css"
+	href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#home" class="logo"><span>GHU</span>mantu  <span>T&T</span></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="contacts">contact</a>
+    </nav>
+
+    <div class="icons">
+        
+       <a  href="login"><i class="fas fa-user" id="login-btn" ></i></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+        <a href="https://www.discoveradventure.com/" class="btn">discover more</a>
+    </div>
+
+   
+
+    <div class="video-container">
+        <video loop src="../static/images/vid-4.mp4" id="video-slider"  autoplay muted>
+<!--more video        
+       <video src="../static/images/vid-3.mp4" id="video-slider" loop autoplay muted>
+        <video src="../static/images/vid-5.mp4" id="video-slider" loop autoplay muted>
+        <video src="../static/images/vid-1.mp4" id="video-slider" loop autoplay muted>
+        <video src="../static/images/vid-2.mp4" id="video-slider" loop autoplay muted>
+            -->
+        </video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="../static/images/book-img.svg" alt="">
+        </div>
+
+        <form action=""  method="post">
+				{% csrf_token %}
+
+            <div class="inputBox">
+                <h3>From Where</h3>
+                <input type="text" name ="title" placeholder="place Name">
+            </div>
+
+            <div class="inputBox">
+                <h3>To Where</h3>
+                <input type="text" name ="ariival" placeholder="Place Name">
+            </div>
+
+
+
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" name ="description" placeholder="Number of Guests">
+            </div>
+          
+            <div class="inputBox">
+                <h3>Onboarding-Date</h3>
+                <input type="date" name="date">
+            </div> 
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="../static/images/p-1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹15999.00 <span>₹19999.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../static/images/p-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹21000.00 <span>₹24999.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../static/images/p-3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹54999.00 <span>$65999.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../static/images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹78000.00 <span>₹95699.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../static/images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">₹60999.00 <span>₹72899.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../static/images/p-6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Egypt </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> ₹51999.00 <span>₹62059.00</span> </div>
+                <a href="payment" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>We Provide a best hotel at very affordable price in your trip,further
+            you can compare it to yourcself according to your choices.
+            <a href="https://www.tripadvisor.in/HotelsList-India-Budget-Hotels-zfp7723373.html" target="blank">Readmore...</a></p>
+        
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!
+            <a href="../static/images/hotel_menu.pdf" target="blank">Readmore...</a></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!
+                <a href="../static/images/Safety Guide.pdf" target="blank">Readmore...</a></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!
+                <a href="https://aroundtheworldtours.com" target="blank">Readmore..</a></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!
+                <a href="https://www.nerdwallet.com/article/travel/fastest-airplanes-commercial-passengers-can-fly" target="blank">Readmore...</a></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!
+            <a href="https://www.cntraveler.com/gallery/adventures-to-have-in-a-lifetime" target="blank">Readmore...</a</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="../static/images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.tripadvisor.com/Tourism-g147427-Cat_Island_Out_Islands_Bahamas-Vacations.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.chile.travel/en/where-to-go/destination/torres-del-paine/" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.tourmyindia.com/states/jammu-kashmir/dal-lake.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.newzealand.com/int/milford-sound/" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://rove.me/to/madagascar/avenue-of-the-baobabs" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://grandcanyon.com/" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://traveltriangle.com/blog/le-morne-brabant-mauritius/" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.tripadvisor.in/Attraction_Review-g1597036-d627649-Reviews-Railay_Beach-Railay_Beach_Krabi_Town_Krabi_Province.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="../static/images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="https://www.tripadvisor.com/Tourism-g147427-Cat_Island_Out_Islands_Bahamas-Vacations.html" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="../static/images/rahul.jpeg" alt="">
+                    <h3>Rahul Kumar</h3>
+                    <p>It was a great experience and we thoroughly enjoyed our trip. I was traveling with elderly people and also a child. I must say that all the arrangements were done beautifully. The cab provided to us was big enough to adjust the luggage we were carrying. It was clean and very well maintained. We were picked up at Kochi airport by our Cab driver Sanoj who was extremely friendly and ensured that our trip was comfortable. He knew the locations like the back of his hand and also guided us with ticket booking through online channels so that we don't have to stand in line or miss the viewpoints. Thanks to him for being such a great guide. Also, I must thank Anshu and Ansh from ghumantu that they took great care in customizing the trip for me & my family. All the details were shared in advance and not a single time, did I have to get back to the trip manager for any problem. Thanks a lot, ghumantu you make our journey very smooth.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="../static/images/pic2.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="../static/images/pic3.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="../static/images/pic4.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>  -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Travel Tours is the flagship leisure travel brand of FCTG Australia, in India. Known for its range of customized travel offerings, Travel Tours promises 'unbeatable' services both in pricing and quality.</p></br>
+            <p>Currently, there are over 25 Travel Tours stores across all leading cities in India Delhi-NCR, Mumbai, Pune, Ahmedabad, Chandigarh, Bangalore, Hyderabad, Cochin, Chennai and Indore among other cities.</p>
+        </div>
+        <div class="box">
+           <h3>branch locations</h3>
+            <a href="https://www.india.gov.in/">india</a>
+            <a href="https://www.britannica.com/place/United-States">USA</a>
+            <a href="https://www.japan.go.jp/">japan</a>
+            <a href="https://www.nationsonline.org/oneworld/france.htm">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit">  created by Rishav Raj,Rahul Kumar,Ayush Anand,Saurabh Singh,Prince Raj<span> </span> | all rights reserved! </h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
